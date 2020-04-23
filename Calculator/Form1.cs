@@ -85,7 +85,15 @@ namespace Calculator
             firstNumber = Convert.ToDouble(firstNumberTextBox.Text);
             secondNumber = Convert.ToDouble(secondNumberTextBox.Text);
 
-            resultsLabel.Text = (firstNumber / secondNumber).ToString();
+            if(secondNumber == 0)
+            {
+                MessageBox.Show("You should NOT divide by ZERO");
+            }
+            else
+            {
+                resultsLabel.Text = (firstNumber / secondNumber).ToString();
+            }
+            
         }
 
         private void addingNumbers(object sender, EventArgs e)
