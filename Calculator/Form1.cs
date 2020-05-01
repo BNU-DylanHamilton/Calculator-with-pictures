@@ -58,6 +58,10 @@ namespace Calculator
             resultsLabel.Text = ((firstNumber + secondNumber) / 2).ToString();
         }
 
+        /// <summary>
+        /// This changes the background colour to blue
+        /// and subtracts the 2 numbers.
+        /// </summary>
         private void subtractingNumbers(object sender, EventArgs e)
         {
             this.BackColor = Color.Blue;
@@ -68,6 +72,11 @@ namespace Calculator
             resultsLabel.Text = (firstNumber - secondNumber).ToString();
         }
 
+        /// <summary>
+        /// This changes the background colour
+        /// to yellow and multiplies the 2 
+        /// numbers.
+        /// </summary>
         private void MultiplyingNumbers(object sender, EventArgs e)
         {
             this.BackColor = Color.Yellow;
@@ -78,6 +87,10 @@ namespace Calculator
             resultsLabel.Text = (firstNumber * secondNumber).ToString();
         }
 
+        /// <summary>
+        /// This changes the background colour to 
+        /// green and divides the 2 numbers.
+        /// </summary>
         private void dividingNumbers(object sender, EventArgs e)
         {
             this.BackColor = Color.Green;
@@ -96,6 +109,10 @@ namespace Calculator
             
         }
 
+        /// <summary>
+        /// This changes the background colour to
+        /// red and adds the numbers together.
+        /// </summary>
         private void addingNumbers(object sender, EventArgs e)
         {
             this.BackColor = Color.Red;
